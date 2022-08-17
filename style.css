@@ -3,8 +3,22 @@ body {
 }
 
 header {
-    background: #BBBBBB;
+    
     padding: 20px 0;
+}
+
+header::after {
+    content: "";
+    background: url(imagem/background.jpg);
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+    height: 310px;
+    width: 100%;
 }
 
 .caixa {
@@ -102,12 +116,19 @@ footer {
 
 form {
     margin: 40px 0;
+    padding-left: 230px;
+}
+
+table {
+    margin: 40px 0;
+    padding-left: 330px;
 }
 
 form label {
     display:block;
     font-size: 20px;
     margin: 0 0 10px;
+    
 }
 
 form label, form legend {
@@ -271,6 +292,15 @@ td, th {
     }
     .lista-beneficios, imagem-beneficios {
         width: 100%
+    }
+}
+
+@media(min-width: 1024px) {
+    .carousel-item {
+        overflow: hidden;
+        width: 700px;
+        height: 400px;
+        margin: 0 auto;
     }
 }
 
